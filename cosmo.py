@@ -623,15 +623,15 @@ def cosmoDistanceFixedQuad(z, H_0, Om_M, Om_V):
 	#Return values in a dictionary
 	return {'D_C' : D_C, 't_0' : t_0 / (365 * 60 * 60 * 24E9), 'D_A' : D_A, 'D_L' : D_L, 'V_C' : V_C / 1.0E9}
 
-dist = cosmoDistanceTrap(0.0068, 70, 0.28, 0.72)
+dist = cosmoDistanceTrap(3, 70, 0.28, 0.72)
 print dist 
-dist2 = cosmoDistanceSimp(0.0068, 70, 0.28, 0.72)
+dist2 = cosmoDistanceSimp(3, 70, 0.28, 0.72)
 print dist2
-dist3 = cosmoDistanceRomb(0.0068, 70, 0.28, 0.72)
+dist3 = cosmoDistanceRomb(3, 70, 0.28, 0.72)
 print dist3
-dist4 = cosmoDistanceQuad(0.0068, 70, 0.28, 0.72)
+dist4 = cosmoDistanceQuad(3, 70, 0.28, 0.72)
 print dist4
-dist5 = cosmoDistanceFixedQuad(0.0068, 70, 0.28, 0.72)
+dist5 = cosmoDistanceFixedQuad(3, 70, 0.28, 0.72)
 print dist5
 
 #Print out some graphs of the results for a series of evenly spaced redshift values 
